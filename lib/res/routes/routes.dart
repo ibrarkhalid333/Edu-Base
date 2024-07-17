@@ -1,3 +1,5 @@
+import 'package:edu_base/view/diaryteacher.dart';
+import 'package:edu_base/view/example.dart';
 import 'package:edu_base/view/home_screen.dart';
 import 'package:edu_base/view/login_screen.dart';
 import 'package:edu_base/view/otp_field_screen.dart';
@@ -12,7 +14,9 @@ class AppRoutes {
         GetPage(name: RouteNames.LoginScreen, page: () => LoginScreen()),
         GetPage(name: RouteNames.OtpScreen, page: () => OtpFieldScreen()),
         GetPage(name: RouteNames.HomeScreen, page: () => HomeScreen()),
+        GetPage(name: RouteNames.DiaryTeacher, page: () => DiaryForTeacher()),
         GetPage(
             name: RouteNames.TeacherDashboard, page: () => TeacherDashboard()),
+        GetPage(name: RouteNames.Example, page: () => Example()),
       ];
 }

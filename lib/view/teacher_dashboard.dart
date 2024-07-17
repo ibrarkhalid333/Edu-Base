@@ -1,7 +1,9 @@
 import 'package:edu_base/res/Components/selection_container.dart';
 import 'package:edu_base/res/assets/image_asset.dart';
 import 'package:edu_base/res/colors/appColors.dart';
+import 'package:edu_base/res/routes/route_names.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class TeacherDashboard extends StatefulWidget {
   const TeacherDashboard({super.key});
@@ -27,6 +29,15 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
     ImageAssets.application,
     ImageAssets.setting
   ];
+  Set<String> RouteName = {
+    RouteNames.DiaryTeacher,
+    RouteNames.HomeScreen,
+    RouteNames.LoginScreen,
+    RouteNames.OtpScreen,
+    RouteNames.SplashScreen,
+    RouteNames.Example,
+  };
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,12 +92,14 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
                       crossAxisCount: 2,
                       mainAxisSpacing: 10,
                       crossAxisSpacing: 20),
-                  itemCount: 6,
+                  itemCount: Items.length,
                   itemBuilder: (context, index) {
                     return SellectionContainer(
                         title: Items[index],
                         imagePath: ImageAsset[index],
-                        onPress: () {});
+                        onPress: () {
+                          Get.toNamed(RouteName.elementAt(index));
+                        });
                   }),
             ),
           ],

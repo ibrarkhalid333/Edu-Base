@@ -4,4 +4,6 @@ class RouteNames {
   static const String HomeScreen = '/home_screen';
   static const String OtpScreen = '/otp_screen';
   static const String TeacherDashboard = '/Tdashboard';
+  static const String DiaryTeacher = '/Tdiary';
+  static const String Example = '/Example';
 }
