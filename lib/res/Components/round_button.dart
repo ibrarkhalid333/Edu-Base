@@ -1,16 +1,18 @@
 import 'package:edu_base/res/colors/appColors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class RoundButton extends StatelessWidget {
   const RoundButton(
       {Key? key,
       this.textColor = Appcolors.primaryTextColor,
       this.buttonColor = Appcolors.primaryButtonColor,
-      required this.title,
+      this.title = '',
       required this.onPress,
       this.width = 50,
       this.height = 50,
-      this.loading = false})
+      this.loading = false,
+      this.icon = const Icon(Icons.account_circle)})
       : super(key: key);
 
   final bool loading;
@@ -18,6 +20,7 @@ class RoundButton extends StatelessWidget {
   final double height, width;
   final VoidCallback onPress;
   final Color textColor, buttonColor;
+  final Icon icon;
 
   @override
   Widget build(BuildContext context) {
