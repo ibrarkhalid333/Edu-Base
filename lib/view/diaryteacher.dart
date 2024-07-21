@@ -105,60 +105,368 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
             SizedBox(
               height: 10,
             ),
-            Card(
-              elevation: 5,
-              child: Container(
-                padding: EdgeInsets.fromLTRB(5, 10, 5, 5),
+            Expanded(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
                 child: Column(
                   children: [
-                    Container(
-                      padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Container(
-                            height: 50,
-                            width: 80,
-                            child: Center(child: Text('5 Feb')),
-                            decoration: BoxDecoration(
-                                border: Border.all(color: Colors.black)),
-                          ),
-                          Container(
-                            height: 50,
-                            width: 168,
-                            child: Center(child: Text('Mathematics')),
-                            decoration: BoxDecoration(
-                                border: Border.all(color: Colors.black)),
-                          ),
-                          Container(
-                            height: 50,
-                            width: 80,
-                            child: Center(child: Text('3rd A')),
-                            decoration: BoxDecoration(
-                                border: Border.all(color: Colors.black)),
-                          ),
-                        ],
+                    Card(
+                      elevation: 10,
+                      child: Container(
+                        padding: EdgeInsets.fromLTRB(5, 10, 5, 5),
+                        child: Column(
+                          children: [
+                            Container(
+                              // padding: EdgeInsets.fromLTRB(1, 0, 1, 0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    height: 50,
+                                    width: 93,
+                                    child: Center(child: Text('5 Feb')),
+                                    decoration: BoxDecoration(
+                                        border:
+                                            Border.all(color: Colors.black)),
+                                  ),
+                                  Container(
+                                    height: 50,
+                                    width: 172,
+                                    child: Center(child: Text('Mathematics')),
+                                    decoration: BoxDecoration(
+                                        border:
+                                            Border.all(color: Colors.black)),
+                                  ),
+                                  Container(
+                                    height: 50,
+                                    width: 93,
+                                    child: Center(child: Text('3rd A')),
+                                    decoration: BoxDecoration(
+                                        border:
+                                            Border.all(color: Colors.black)),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black)),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'H.W:',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w700),
+                                      ),
+                                      SizedBox(
+                                        width: 15,
+                                      ),
+                                      Text('Page Number 76, 88'),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Card(
+                                    elevation: 5,
+                                    child: Container(
+                                      padding:
+                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      height: 60,
+                                      child: Center(
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            IconButton(
+                                                onPressed: () {},
+                                                icon: Icon(
+                                                  Icons.play_arrow,
+                                                  color: Appcolors
+                                                      .primaryButtonColor,
+                                                )),
+                                            Slider(
+                                                value: .8,
+                                                onChanged: (Value) {}),
+                                            Text('00:00'),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black)),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'C.W:',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w700),
+                                      ),
+                                      SizedBox(
+                                        width: 15,
+                                      ),
+                                      Text('Page Number 76 part (4)'),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Card(
+                                    elevation: 5,
+                                    child: Container(
+                                      padding:
+                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      height: 60,
+                                      child: Center(
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            IconButton(
+                                                onPressed: () {},
+                                                icon: Icon(
+                                                  Icons.play_arrow,
+                                                  color: Appcolors
+                                                      .primaryButtonColor,
+                                                )),
+                                            Slider(
+                                                value: .8,
+                                                onChanged: (Value) {}),
+                                            Text('00:00'),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Card(
+                                    elevation: 5,
+                                    child: Container(
+                                      padding:
+                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      height: 60,
+                                      child: Center(
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            IconButton(
+                                                onPressed: () {},
+                                                icon: Icon(
+                                                  Icons.image,
+                                                  color: Appcolors
+                                                      .primaryButtonColor,
+                                                )),
+                                            SizedBox(
+                                              width: 20,
+                                            ),
+                                            Text('Click here to view image'),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Text(
-                                'H.W:',
-                                style: TextStyle(fontWeight: FontWeight.w700),
-                              ),
-                              SizedBox(
-                                width: 15,
-                              ),
-                              Text('Page Number 76, 88'),
-                            ],
-                          )
-                        ],
-                      ),
+                    SizedBox(
+                      height: 20,
                     ),
+                    Card(
+                      elevation: 5,
+                      child: Container(
+                        padding: EdgeInsets.fromLTRB(5, 10, 5, 5),
+                        child: Column(
+                          children: [
+                            Container(
+                              // padding: EdgeInsets.fromLTRB(1, 0, 1, 0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    height: 50,
+                                    width: 93,
+                                    child: Center(child: Text('5 Feb')),
+                                    decoration: BoxDecoration(
+                                        border:
+                                            Border.all(color: Colors.black)),
+                                  ),
+                                  Container(
+                                    height: 50,
+                                    width: 172,
+                                    child: Center(child: Text('Mathematics')),
+                                    decoration: BoxDecoration(
+                                        border:
+                                            Border.all(color: Colors.black)),
+                                  ),
+                                  Container(
+                                    height: 50,
+                                    width: 93,
+                                    child: Center(child: Text('3rd A')),
+                                    decoration: BoxDecoration(
+                                        border:
+                                            Border.all(color: Colors.black)),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black)),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'H.W:',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w700),
+                                      ),
+                                      SizedBox(
+                                        width: 15,
+                                      ),
+                                      Text('Page Number 76, 88'),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Card(
+                                    elevation: 5,
+                                    child: Container(
+                                      padding:
+                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      height: 60,
+                                      child: Center(
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            IconButton(
+                                                onPressed: () {},
+                                                icon: Icon(
+                                                  Icons.play_arrow,
+                                                  color: Appcolors
+                                                      .primaryButtonColor,
+                                                )),
+                                            Slider(
+                                                value: .8,
+                                                onChanged: (Value) {}),
+                                            Text('00:00'),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black)),
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'C.W:',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w700),
+                                      ),
+                                      SizedBox(
+                                        width: 15,
+                                      ),
+                                      Text('Page Number 76 part (4)'),
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: 5,
+                                  ),
+                                  Card(
+                                    elevation: 5,
+                                    child: Container(
+                                      padding:
+                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      height: 60,
+                                      child: Center(
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            IconButton(
+                                                onPressed: () {},
+                                                icon: Icon(
+                                                  Icons.play_arrow,
+                                                  color: Appcolors
+                                                      .primaryButtonColor,
+                                                )),
+                                            Slider(
+                                                value: .8,
+                                                onChanged: (Value) {}),
+                                            Text('00:00'),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Card(
+                                    elevation: 5,
+                                    child: Container(
+                                      padding:
+                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      height: 60,
+                                      child: Center(
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            IconButton(
+                                                onPressed: () {},
+                                                icon: Icon(
+                                                  Icons.image,
+                                                  color: Appcolors
+                                                      .primaryButtonColor,
+                                                )),
+                                            SizedBox(
+                                              width: 20,
+                                            ),
+                                            Text('Click here to view image'),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
