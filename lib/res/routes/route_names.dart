@@ -6,4 +6,5 @@ class RouteNames {
   static const String TeacherDashboard = '/Tdashboard';
   static const String DiaryTeacher = '/Tdiary';
   static const String Example = '/Example';
+  static const String TAttendance = '/TAttendance';
 }

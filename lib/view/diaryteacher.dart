@@ -470,7 +470,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                   ],
                 ),
               ),
-            )
+            ),
+            RoundButton(width: 360, title: '+ Create', onPress: () {}),
           ],
         ),
       ),
