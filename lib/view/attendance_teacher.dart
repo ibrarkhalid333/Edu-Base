@@ -1,3 +1,4 @@
+import 'package:edu_base/res/Components/attendance_card.dart';
 import 'package:edu_base/res/colors/appColors.dart';
 import 'package:flutter/material.dart';
 
@@ -50,32 +51,54 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
           SizedBox(
             height: 30,
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Expanded(
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
               child: SingleChildScrollView(
-                child: Card(
-                    elevation: 5,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          height: 40,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Text('9th (Main Campus)'),
-                              Icon(Icons.arrow_drop_down),
-                            ],
-                          ),
-                        ),
-                        Container(
-                            width: 370,
-                            padding: EdgeInsets.fromLTRB(60, 5, 20, 5),
-                            color: Colors.green[100],
-                            child: Text('A')),
-                      ],
-                    )),
+                scrollDirection: Axis.vertical,
+                child: Column(
+                  children: [
+                    BaseCard(
+                        ClassName: 'Nursery',
+                        ClassSection: 'A',
+                        Campus: 'Main Campus'),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    BaseCard(
+                        ClassName: 'KG',
+                        ClassSection: 'A',
+                        Campus: 'Main Campus'),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    BaseCard(
+                        ClassName: '1st',
+                        ClassSection: 'A',
+                        Campus: 'Main Campus'),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    BaseCard(
+                        ClassName: '6th',
+                        ClassSection: 'A',
+                        Campus: 'Main Campus'),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    BaseCard(
+                        ClassName: '9th',
+                        ClassSection: 'A',
+                        Campus: 'Main Campus'),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    BaseCard(
+                        ClassName: '10th',
+                        ClassSection: 'A',
+                        Campus: 'Main Campus'),
+                  ],
+                ),
               ),
             ),
           )
