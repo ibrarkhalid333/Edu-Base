@@ -32,7 +32,7 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
   Set<String> RouteName = {
     RouteNames.DiaryTeacher,
     RouteNames.TAttendance,
-    RouteNames.LoginScreen,
+    RouteNames.AwardList,
     RouteNames.OtpScreen,
     RouteNames.SplashScreen,
     RouteNames.Example,

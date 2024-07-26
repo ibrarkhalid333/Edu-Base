@@ -1,4 +1,5 @@
 import 'package:edu_base/view/attendance_teacher.dart';
+import 'package:edu_base/view/award_list.dart';
 import 'package:edu_base/view/diaryteacher.dart';
 import 'package:edu_base/view/example.dart';
 import 'package:edu_base/view/home_screen.dart';
@@ -21,5 +22,6 @@ class AppRoutes {
         GetPage(name: RouteNames.Example, page: () => Example()),
         GetPage(
             name: RouteNames.TAttendance, page: () => AttendanceForTeacher()),
+        GetPage(name: RouteNames.AwardList, page: () => AwardList())
       ];
 }
