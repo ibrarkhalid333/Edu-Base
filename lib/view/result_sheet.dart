@@ -1,5 +1,6 @@
 import 'package:edu_base/res/colors/appColors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ResultSheet extends StatefulWidget {
   const ResultSheet({super.key});
@@ -101,7 +102,7 @@ class _ResultSheetState extends State<ResultSheet> {
               padding: EdgeInsets.all(8.0),
               children: [
                 DataTable(
-                    columnSpacing: 10,
+                    columnSpacing: 5,
                     columns: [
                       DataColumn(label: Text('Sr.')),
                       DataColumn(label: Text('Roll No.')),
