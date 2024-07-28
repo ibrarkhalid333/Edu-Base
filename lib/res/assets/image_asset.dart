@@ -9,4 +9,5 @@ class ImageAssets {
   static const String parent_talk = "assets/images/Parent_talk.png";
   static const String application = "assets/images/Application.png";
   static const String setting = "assets/images/Settings.png";
+  static const String image = "assets/images/student_image.png";
 }

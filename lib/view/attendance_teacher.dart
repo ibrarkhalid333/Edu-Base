@@ -1,6 +1,8 @@
 import 'package:edu_base/res/Components/attendance_card.dart';
 import 'package:edu_base/res/colors/appColors.dart';
+import 'package:edu_base/view/class_attendance.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AttendanceForTeacher extends StatefulWidget {
   const AttendanceForTeacher({super.key});
@@ -59,6 +61,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                 child: Column(
                   children: [
                     BaseCard(
+                        onPress: () {},
                         ClassName: 'Nursery',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
@@ -66,6 +69,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                       height: 40,
                     ),
                     BaseCard(
+                        onPress: () {},
                         ClassName: 'KG',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
@@ -73,6 +77,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                       height: 40,
                     ),
                     BaseCard(
+                        onPress: () {},
                         ClassName: '1st',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
@@ -80,6 +85,9 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                       height: 40,
                     ),
                     BaseCard(
+                        onPress: () {
+                          Get.to(ClassAttendance());
+                        },
                         ClassName: '6th',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
@@ -87,6 +95,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                       height: 40,
                     ),
                     BaseCard(
+                        onPress: () {},
                         ClassName: '9th',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
@@ -94,6 +103,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                       height: 40,
                     ),
                     BaseCard(
+                        onPress: () {},
                         ClassName: '10th',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
