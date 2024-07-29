@@ -1,3 +1,4 @@
+import 'package:edu_base/res/Components/round_button.dart';
 import 'package:edu_base/res/assets/image_asset.dart';
 import 'package:edu_base/res/colors/appColors.dart';
 import 'package:flutter/material.dart';
@@ -10,6 +11,18 @@ class ClassAttendance extends StatefulWidget {
 }
 
 class _ClassAttendanceState extends State<ClassAttendance> {
+  final List<String> Name = [
+    'Sudais Rehman',
+    'Sana Ullah',
+    'Hizbullah',
+    'Muhammad Sullaiman',
+    'Muhammad Fahad',
+    'Muhammad Numan',
+    'Hakeem Ullah',
+    'Saifullah',
+    'Awais Qadir',
+    'Ahmad Hassan'
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,18 +67,105 @@ class _ClassAttendanceState extends State<ClassAttendance> {
                         (index) => DataRow(cells: [
                               DataCell(Text((index + 1).toString())),
                               DataCell(CircleAvatar(
-                                radius: 30,
+                                radius: 25,
                                 backgroundImage: AssetImage(
                                   ImageAssets.image,
                                 ),
                               )),
-                              DataCell(Text('jkdhfu')),
-                              DataCell(Text('jkdhfu')),
+                              DataCell(Text(Name[index],
+                                  style: TextStyle(fontSize: 12))),
+                              DataCell(Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    width: 20,
+                                    height: 20,
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1,
+                                            color: Appcolors.blackColor),
+                                        borderRadius:
+                                            BorderRadius.circular(100)),
+                                    child: Center(child: Text('A')),
+                                  ),
+                                  Container(
+                                    width: 20,
+                                    height: 20,
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1,
+                                            color: Appcolors.blackColor),
+                                        borderRadius:
+                                            BorderRadius.circular(100)),
+                                    child: Center(
+                                        child: Text(
+                                      'B',
+                                    )),
+                                  ),
+                                  Container(
+                                    width: 20,
+                                    height: 20,
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1,
+                                            color: Appcolors.blackColor),
+                                        borderRadius:
+                                            BorderRadius.circular(100)),
+                                    child: Center(child: Text('C')),
+                                  ),
+                                  Container(
+                                    width: 20,
+                                    height: 20,
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            width: 1,
+                                            color: Appcolors.blackColor),
+                                        borderRadius:
+                                            BorderRadius.circular(100)),
+                                    child: Center(child: Text('D')),
+                                  ),
+                                ],
+                              )),
                             ])))
               ],
             ),
           )
         ],
+      ),
+      bottomNavigationBar: Container(
+        padding: EdgeInsets.fromLTRB(10, 0, 20, 0),
+        decoration: BoxDecoration(color: Colors.white, boxShadow: [
+          BoxShadow(
+            color: Appcolors.blackColor.withOpacity(.1),
+            blurRadius: 2,
+          )
+        ]),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            TextButton(
+                onPressed: () {},
+                child: Text(
+                  'Mark All',
+                  style: TextStyle(color: Appcolors.blueColor),
+                )),
+            RoundButton(
+              width: 120,
+              height: 50,
+              title: 'SAVE',
+              onPress: () {},
+            ),
+            Container(
+              child: Row(
+                children: [
+                  Icon(Icons.filter_alt),
+                  Text('filter'),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
