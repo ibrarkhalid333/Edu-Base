@@ -1,5 +1,6 @@
-import 'package:edu_base/res/assets/image_asset.dart';
-import 'package:edu_base/view_model/services/splash_services.dart';
+
+import 'package:edu_base/core/res/assets/image_asset.dart';
+import 'package:edu_base/src/auth/services/splash_services.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

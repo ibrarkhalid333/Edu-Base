@@ -1,6 +1,5 @@
 import 'dart:async';
-
-import 'package:edu_base/res/routes/route_names.dart';
+import 'package:edu_base/core/res/routes/route_names.dart';
 import 'package:get/get.dart';
 
 class SplashServices {

@@ -37,7 +37,7 @@ class BaseCard extends StatelessWidget {
               onTap: onPress,
               child: Container(
                   height: height - 10,
-                  width: width,
+                  width: double.infinity,
                   padding: EdgeInsets.fromLTRB(60, 10, 20, 5),
                   color: Colors.green[100],
                   child: Text(ClassSection)),

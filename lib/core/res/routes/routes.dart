@@ -1,12 +1,13 @@
-import 'package:edu_base/view/attendance_teacher.dart';
-import 'package:edu_base/view/award_list.dart';
-import 'package:edu_base/view/diaryteacher.dart';
-import 'package:edu_base/view/example.dart';
-import 'package:edu_base/view/home_screen.dart';
-import 'package:edu_base/view/login_screen.dart';
-import 'package:edu_base/view/otp_field_screen.dart';
-import 'package:edu_base/view/splash_screen.dart';
-import 'package:edu_base/view/teacher_dashboard.dart';
+
+import 'package:edu_base/src/attendance/screens/attendance_teacher.dart';
+import 'package:edu_base/src/auth/screens/login_screen.dart';
+import 'package:edu_base/src/auth/screens/otp_field_screen.dart';
+import 'package:edu_base/src/auth/screens/splash_screen.dart';
+import 'package:edu_base/src/diary_teacher/screens/diaryteacher.dart';
+import 'package:edu_base/src/exam/screens/award_list.dart';
+import 'package:edu_base/src/example.dart';
+import 'package:edu_base/src/home/screens/home_screen.dart';
+import 'package:edu_base/src/teacher_dashboard/teacher_dashboard.dart';
 import 'package:get/get.dart';
 import 'route_names.dart';
 

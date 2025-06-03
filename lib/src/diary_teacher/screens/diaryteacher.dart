@@ -1,6 +1,6 @@
-import 'package:edu_base/res/Components/round_button.dart';
-import 'package:edu_base/res/colors/appColors.dart';
-import 'package:edu_base/view_model/controlller/diary_teacher_controller.dart';
+import 'package:edu_base/core/res/colors/appColors.dart';
+import 'package:edu_base/src/Components/round_button.dart';
+import 'package:edu_base/src/diary_teacher/controller/diary_teacher_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

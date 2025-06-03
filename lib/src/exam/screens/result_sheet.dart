@@ -1,4 +1,4 @@
-import 'package:edu_base/res/colors/appColors.dart';
+import 'package:edu_base/core/res/colors/appColors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

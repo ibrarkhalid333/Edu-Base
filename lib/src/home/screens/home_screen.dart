@@ -1,7 +1,7 @@
-import 'package:edu_base/res/assets/image_asset.dart';
-import 'package:edu_base/res/routes/route_names.dart';
+import 'package:edu_base/core/res/assets/image_asset.dart';
+import 'package:edu_base/core/res/routes/route_names.dart';
+import 'package:edu_base/src/home/components/selection_container.dart';
 import 'package:flutter/material.dart';
-import 'package:edu_base/res/Components/selection_container.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {

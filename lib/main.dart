@@ -1,6 +1,6 @@
-import 'package:edu_base/res/routes/route_names.dart';
-import 'package:edu_base/res/routes/routes.dart';
-import 'package:edu_base/view/splash_screen.dart';
+import 'package:edu_base/core/res/routes/route_names.dart';
+import 'package:edu_base/core/res/routes/routes.dart';
+import 'package:edu_base/src/auth/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
