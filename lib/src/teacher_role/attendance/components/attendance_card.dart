@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 
 class BaseCard extends StatelessWidget {
   const BaseCard(
-      {Key? key,
+      {super.key,
       required this.onPress,
       required this.ClassName,
       required this.ClassSection,
       required this.Campus,
       this.height = 50,
-      this.width = 370})
-      : super(key: key);
+      this.width = 370});
   final VoidCallback onPress;
   final String ClassName;
   final String Campus;
@@ -23,13 +22,13 @@ class BaseCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
+            SizedBox(
               height: height,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text(ClassName + ' (${Campus})'),
-                  Icon(Icons.arrow_drop_down),
+                  Text('$ClassName (${Campus})'),
+                  const Icon(Icons.arrow_drop_down),
                 ],
               ),
             ),
@@ -38,7 +37,7 @@ class BaseCard extends StatelessWidget {
               child: Container(
                   height: height - 10,
                   width: double.infinity,
-                  padding: EdgeInsets.fromLTRB(60, 10, 20, 5),
+                  padding: const EdgeInsets.fromLTRB(60, 10, 20, 5),
                   color: Colors.green[100],
                   child: Text(ClassSection)),
             ),

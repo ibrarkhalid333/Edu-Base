@@ -1,8 +1,8 @@
 import 'package:edu_base/core/res/colors/appColors.dart';
-import 'package:edu_base/src/exam/components/award_card.dart';
-import 'package:edu_base/src/exam/screens/result_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../components/award_card.dart';
+import 'result_sheet.dart';
 
 class AwardList extends StatefulWidget {
   const AwardList({super.key});
@@ -16,15 +16,15 @@ class _AwardListState extends State<AwardList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Award List'),
+        title: const Text('Award List'),
         backgroundColor: Appcolors.blueColor,
       ),
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              TextField(
+              const TextField(
                 decoration: InputDecoration(
                   labelText:
                       'You can search with class name, award list id and subject',
@@ -33,19 +33,19 @@ class _AwardListState extends State<AwardList> {
               ),
               Expanded(
                   child: Padding(
-                padding: EdgeInsets.fromLTRB(8.0, 25, 8.0, 0),
+                padding: const EdgeInsets.fromLTRB(8.0, 25, 8.0, 0),
                 child: SingleChildScrollView(
                     scrollDirection: Axis.vertical,
                     child: Column(
                       children: [
                         AwardCard(
                           onPress: () {
-                            Get.to(ResultSheet());
+                            Get.to(const ResultSheet());
                           },
                           ClassName: '8th (A)',
                           Subject: 'Mathematics',
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         AwardCard(
@@ -53,7 +53,7 @@ class _AwardListState extends State<AwardList> {
                           ClassName: '8th (A)',
                           Subject: 'Physics',
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         AwardCard(
@@ -61,7 +61,7 @@ class _AwardListState extends State<AwardList> {
                           ClassName: '8th (A)',
                           Subject: 'Biology',
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         AwardCard(
@@ -69,7 +69,7 @@ class _AwardListState extends State<AwardList> {
                           ClassName: '8th (A)',
                           Subject: 'Chemistry',
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         AwardCard(
@@ -77,7 +77,7 @@ class _AwardListState extends State<AwardList> {
                           ClassName: '8th (A)',
                           Subject: 'Urdu',
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         AwardCard(
@@ -85,7 +85,7 @@ class _AwardListState extends State<AwardList> {
                           ClassName: '8th (A)',
                           Subject: 'Islamic Studies',
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                         AwardCard(
@@ -93,7 +93,7 @@ class _AwardListState extends State<AwardList> {
                           ClassName: '8th (A)',
                           Subject: 'English',
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 20,
                         ),
                       ],

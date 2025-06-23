@@ -1,8 +1,9 @@
 import 'package:edu_base/core/res/colors/appColors.dart';
-import 'package:edu_base/src/attendance/components/attendance_card.dart';
-import 'package:edu_base/src/attendance/screens/class_attendance.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../components/attendance_card.dart';
+import 'class_attendance.dart';
 
 class AttendanceForTeacher extends StatefulWidget {
   const AttendanceForTeacher({super.key});
@@ -17,7 +18,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Appcolors.blueColor,
-        title: Text(
+        title: const Text(
           'Attendance',
           style: TextStyle(color: Colors.white),
         ),
@@ -28,7 +29,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
             height: 45,
             width: 400,
             color: Colors.blueGrey[400],
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Icon(
@@ -46,11 +47,11 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text('Sellect a Section to mark attendance'),
-          SizedBox(
+          const Text('Sellect a Section to mark attendance'),
+          const SizedBox(
             height: 30,
           ),
           Expanded(
@@ -65,7 +66,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                         ClassName: 'Nursery',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     BaseCard(
@@ -73,7 +74,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                         ClassName: 'KG',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     BaseCard(
@@ -81,7 +82,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                         ClassName: '1st',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     BaseCard(
@@ -91,7 +92,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                         ClassName: '6th',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     BaseCard(
@@ -99,7 +100,7 @@ class _AttendanceForTeacherState extends State<AttendanceForTeacher> {
                         ClassName: '9th',
                         ClassSection: 'A',
                         Campus: 'Main Campus'),
-                    SizedBox(
+                    const SizedBox(
                       height: 40,
                     ),
                     BaseCard(

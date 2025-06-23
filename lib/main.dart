@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: RouteNames.SplashScreen,
       getPages: AppRoutes.appRoutes(),
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }

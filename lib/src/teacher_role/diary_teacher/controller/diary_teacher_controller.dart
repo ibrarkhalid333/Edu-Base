@@ -6,8 +6,8 @@ class DiaryTeacherController extends GetxController {
   RxString secondItem = 'Completed'.obs;
 
   Onchanged() {
-    this.newValue.value = firstItem.value;
-    this.firstItem.value = this.secondItem.value;
-    this.secondItem.value = newValue.value;
+    newValue.value = firstItem.value;
+    firstItem.value = secondItem.value;
+    secondItem.value = newValue.value;
   }
 }

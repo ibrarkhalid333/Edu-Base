@@ -33,17 +33,17 @@ class _SplashScreenState extends State<SplashScreen> {
               width: 200,
               height: 200,
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               "EDUBASE",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            Text(
+            const Text(
               "PARENTS",
               style: TextStyle(
                   fontSize: 40,

@@ -1,4 +1,4 @@
-import 'package:edu_base/src/attendance/model/attendance_model.dart';
+import 'package:edu_base/src/teacher_role/attendance/model/attendance_model.dart';
 import 'package:get/get.dart';
 
 class AttendanceController extends GetxController {

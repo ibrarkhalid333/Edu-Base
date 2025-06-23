@@ -10,4 +10,5 @@ class ImageAssets {
   static const String application = "assets/images/Application.png";
   static const String setting = "assets/images/Settings.png";
   static const String image = "assets/images/student_image.png";
+  static const String school_logo = "assets/images/school_logo.png";
 }

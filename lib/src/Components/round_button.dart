@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class RoundButton extends StatelessWidget {
   const RoundButton(
-      {Key? key,
+      {super.key,
       this.textColor = Appcolors.primaryTextColor,
       this.buttonColor = Appcolors.primaryButtonColor,
       this.title = '',
@@ -12,8 +12,7 @@ class RoundButton extends StatelessWidget {
       this.width = 50,
       this.height = 50,
       this.loading = false,
-      this.icon = const Icon(Icons.account_circle)})
-      : super(key: key);
+      this.icon = const Icon(Icons.account_circle)});
 
   final bool loading;
   final String title;
@@ -32,7 +31,7 @@ class RoundButton extends StatelessWidget {
           decoration: BoxDecoration(
               color: buttonColor, borderRadius: BorderRadius.circular(10)),
           child: loading
-              ? Center(
+              ? const Center(
                   child: CircularProgressIndicator(),
                 )
               : Center(

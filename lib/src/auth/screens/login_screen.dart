@@ -29,28 +29,28 @@ class _LoginScreenState extends State<LoginScreen> {
             width: 100,
             height: 100,
           ),
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
-          Text(
+          const Text(
             "EDUBASE",
             style: TextStyle(
               fontSize: 15,
               fontWeight: FontWeight.w700,
             ),
           ),
-          Text(
+          const Text(
             "PARENTS",
             style: TextStyle(
                 fontSize: 25, fontWeight: FontWeight.w900, color: Colors.blue),
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'Enter Phone Number',
                 textAlign: TextAlign.left,
               ),
@@ -59,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   labelText: 'Phone Number',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
-                    borderSide: BorderSide(),
+                    borderSide: const BorderSide(),
                   ),
                 ),
                 initialCountryCode: 'PK',
@@ -69,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           RoundButton(

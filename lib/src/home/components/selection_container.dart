@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 
 class SellectionContainer extends StatelessWidget {
   const SellectionContainer({
-    Key? key,
+    super.key,
     required this.onPress,
     required this.title,
     required this.imagePath,
     this.width = 150,
     this.height = 250,
-  }) : super(key: key);
+  });
 
   final double height, width;
   final VoidCallback onPress;
@@ -22,10 +22,10 @@ class SellectionContainer extends StatelessWidget {
       child: Container(
         width: width,
         height: height,
-        padding: EdgeInsets.all(4),
+        padding: const EdgeInsets.all(4),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(10)),
+          borderRadius: const BorderRadius.all(Radius.circular(10)),
           boxShadow: [
             BoxShadow(
               color: Appcolors.blackColor.withOpacity(.4),
@@ -43,12 +43,12 @@ class SellectionContainer extends StatelessWidget {
               width: 100,
               height: 100,
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Text(
               title,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
             ),
           ],
         ),

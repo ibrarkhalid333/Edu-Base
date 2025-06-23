@@ -52,14 +52,14 @@ class _ResultSheetState extends State<ResultSheet> {
       appBar: AppBar(
         backgroundColor: Appcolors.blueColor,
         toolbarHeight: 70,
-        title: Text(
+        title: const Text(
           'Exam Name: Final Term Exam\nExam Date : 22-Jan-2024',
           style: TextStyle(fontSize: 15),
         ),
         actions: [
           Container(
-            padding: EdgeInsets.all(10.0),
-            child: Row(
+            padding: const EdgeInsets.all(10.0),
+            child: const Row(
               children: [
                 Icon(Icons.save),
                 Text('save'),
@@ -71,10 +71,10 @@ class _ResultSheetState extends State<ResultSheet> {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.all(5.0),
+            padding: const EdgeInsets.all(5.0),
             height: 60,
             color: Colors.blue[100],
-            child: Column(
+            child: const Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -99,11 +99,11 @@ class _ResultSheetState extends State<ResultSheet> {
           ),
           Expanded(
             child: ListView(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               children: [
                 DataTable(
                     columnSpacing: 5,
-                    columns: [
+                    columns: const [
                       DataColumn(label: Text('Sr.')),
                       DataColumn(label: Text('Roll No.')),
                       DataColumn(label: Text('Name ')),
@@ -123,7 +123,7 @@ class _ResultSheetState extends State<ResultSheet> {
                                         color: Appcolors.blackColor),
                                   ),
                                   child: Center(child: Text(Written[index])))),
-                              DataCell(Text('')),
+                              const DataCell(Text('')),
                             ]))),
               ],
             ),

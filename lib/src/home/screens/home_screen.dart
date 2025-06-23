@@ -22,11 +22,11 @@ class _HomeScreenState extends State<HomeScreen> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Text(
+        const Text(
           'Select Role',
           style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
         ),
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
         Row(
@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Get.toNamed(RouteNames.TeacherDashboard);
               },
             ),
-            SizedBox(
+            const SizedBox(
               width: 10,
             ),
             SellectionContainer(
@@ -49,11 +49,14 @@ class _HomeScreenState extends State<HomeScreen> {
               width: 150,
               height: 160,
               imagePath: ImageAssets.parents,
-              onPress: () {},
+              onPress: () {
+                Get.toNamed(RouteNames.StudentInfo);
+                
+              },
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
       ],

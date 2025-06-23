@@ -1,10 +1,11 @@
 import 'package:edu_base/core/res/assets/image_asset.dart';
 import 'package:edu_base/core/res/colors/appColors.dart';
 import 'package:edu_base/src/Components/round_button.dart';
-import 'package:edu_base/src/attendance/controller/attendance_controller.dart';
-import 'package:edu_base/src/attendance/model/attendance_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../controller/attendance_controller.dart';
+import '../model/attendance_model.dart';
 
 class ClassAttendance extends StatelessWidget {
   ClassAttendance({super.key});
@@ -66,7 +67,7 @@ class ClassAttendance extends StatelessWidget {
                         10,
                         (index) => DataRow(cells: [
                               DataCell(Text((index + 1).toString())),
-                              DataCell(CircleAvatar(
+                              const DataCell(CircleAvatar(
                                 radius: 25,
                                 backgroundImage: AssetImage(
                                   ImageAssets.image,
@@ -175,7 +176,7 @@ class ClassAttendance extends StatelessWidget {
           children: [
             TextButton(
                 onPressed: () => atc.markAllPresent(),
-                child: Text(
+                child: const Text(
                   'Mark All',
                   style: TextStyle(color: Appcolors.blueColor),
                 )),

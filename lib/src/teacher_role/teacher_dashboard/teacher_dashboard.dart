@@ -46,8 +46,8 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
           children: [
             Container(
               height: 300,
-              padding: EdgeInsets.fromLTRB(20, 30, 20, 0),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),
+              decoration: const BoxDecoration(
                 color: Colors.blue,
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(150),
@@ -57,15 +57,15 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
               child: Column(
                 children: [
                   ListTile(
-                    leading: CircleAvatar(
+                    leading: const CircleAvatar(
                       backgroundColor: Colors.black,
                       radius: 20,
                     ),
-                    title: Text(
+                    title: const Text(
                       'The Skills Education \nSystem',
                       style: TextStyle(color: Colors.white),
                     ),
-                    subtitle: Text('View Profile >',
+                    subtitle: const Text('View Profile >',
                         style: TextStyle(
                           color: Colors.white,
                         )),
@@ -73,16 +73,16 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
                       onTap: () {
                         Get.toNamed(RouteNames.HomeScreen);
                       },
-                      child: Icon(
+                      child: const Icon(
                         Icons.logout,
                         color: Colors.white,
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
-                  Text(
+                  const Text(
                     'Hi, Mudasir Ilahi',
                     style: TextStyle(color: Colors.white, fontSize: 30),
                   ),
@@ -90,10 +90,10 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(15, 0, 15, 0),
-              padding: EdgeInsets.fromLTRB(25, 230, 25, 30),
+              margin: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+              padding: const EdgeInsets.fromLTRB(25, 230, 25, 30),
               child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       mainAxisSpacing: 10,
                       crossAxisSpacing: 20),
@@ -119,7 +119,7 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
         ]),
         child: BottomNavigationBar(
           elevation: 20,
-          items: [
+          items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.notifications), label: 'Notifications'),

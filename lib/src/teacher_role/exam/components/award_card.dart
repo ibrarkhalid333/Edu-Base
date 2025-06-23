@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AwardCard extends StatelessWidget {
   const AwardCard({
-    Key? key,
+    super.key,
     required this.onPress,
     this.ID = 74,
     required this.ClassName,
@@ -13,7 +13,7 @@ class AwardCard extends StatelessWidget {
     this.ReturnDate = '04-Mar-2024',
     this.width = 150,
     this.height = 250,
-  }) : super(key: key);
+  });
 
   final double height, width;
   final VoidCallback onPress;
@@ -31,7 +31,7 @@ class AwardCard extends StatelessWidget {
       child: Card(
         elevation: 5,
         child: Container(
-          padding: EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(20.0),
           width: 350,
           color: Colors.pink.withOpacity(.3),
           child: Column(
@@ -41,9 +41,9 @@ class AwardCard extends StatelessWidget {
               Text('Class: $ClassName'),
               Text('Campus: $Campus'),
               Text('Sbject(s): $Subject'),
-              Text('Exam Type: Final Term Exam'),
-              Text('Exam Date: 22-Feb-2024'),
-              Text('Return Date: 04-Mar-2024'),
+              const Text('Exam Type: Final Term Exam'),
+              const Text('Exam Date: 22-Feb-2024'),
+              const Text('Return Date: 04-Mar-2024'),
             ],
           ),
         ),

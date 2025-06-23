@@ -8,4 +8,5 @@ class RouteNames {
   static const String Example = '/Example';
   static const String TAttendance = '/TAttendance';
   static const String AwardList = '/Awardlist';
+  static const String StudentInfo = '/StudentInfo';
 }

@@ -1,8 +1,9 @@
 import 'package:edu_base/core/res/colors/appColors.dart';
 import 'package:edu_base/src/Components/round_button.dart';
-import 'package:edu_base/src/diary_teacher/controller/diary_teacher_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../controller/diary_teacher_controller.dart';
 
 class DiaryForTeacher extends StatefulWidget {
   const DiaryForTeacher({super.key});
@@ -12,13 +13,13 @@ class DiaryForTeacher extends StatefulWidget {
 }
 
 class _DiaryForTeacherState extends State<DiaryForTeacher> {
-  String? _dropdownValue = 'drop down';
+  final String? _dropdownValue = 'drop down';
   final DiaryTeacherController dtc = Get.put(DiaryTeacherController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Diary'),
+        title: const Text('Diary'),
         backgroundColor: Appcolors.blueColor,
       ),
       body: Padding(
@@ -27,7 +28,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
           children: [
             Container(
               height: 50,
-              padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+              padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
               // width: 350,
               decoration: BoxDecoration(
                 border: Border.all(
@@ -40,7 +41,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                 children: [
                   Expanded(
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         hintText: 'Enter something',
                       ),
                     ),
@@ -49,12 +50,12 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                     child: Container(
                       height: 50,
                       width: 70,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           color: Appcolors.blackColor,
                           borderRadius: BorderRadius.only(
                               topRight: Radius.circular(10),
                               bottomRight: Radius.circular(10))),
-                      child: Icon(
+                      child: const Icon(
                         Icons.search,
                         color: Colors.white,
                       ),
@@ -63,7 +64,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Card(
@@ -71,6 +72,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
               child: Obx(() => DropdownButton<String>(
                     items: [
                       DropdownMenuItem(
+                        value: 'drop down',
                         child: Row(
                           children: [
                             Icon(Icons.watch_later_outlined),
@@ -80,9 +82,9 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                             Text(dtc.firstItem.toString())
                           ],
                         ),
-                        value: 'drop down',
                       ),
                       DropdownMenuItem(
+                        value: 'Item 2',
                         child: Row(
                           children: [
                             Icon(Icons.watch_later_outlined),
@@ -92,7 +94,6 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                             Text(dtc.secondItem.toString()),
                           ],
                         ),
-                        value: 'Item 2',
                       )
                     ],
                     value: _dropdownValue,
@@ -102,7 +103,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                     isExpanded: true,
                   )),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Expanded(
@@ -113,7 +114,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                     Card(
                       elevation: 10,
                       child: Container(
-                        padding: EdgeInsets.fromLTRB(5, 10, 5, 5),
+                        padding: const EdgeInsets.fromLTRB(5, 10, 5, 5),
                         child: Column(
                           children: [
                             Container(
@@ -125,37 +126,37 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                   Container(
                                     height: 50,
                                     width: 93,
-                                    child: Center(child: Text('5 Feb')),
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
+                                    child: Center(child: Text('5 Feb')),
                                   ),
                                   Container(
                                     height: 50,
                                     width: 172,
-                                    child: Center(child: Text('Mathematics')),
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
+                                    child: Center(child: Text('Mathematics')),
                                   ),
                                   Container(
                                     height: 50,
                                     width: 93,
-                                    child: Center(child: Text('3rd A')),
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
+                                    child: Center(child: Text('3rd A')),
                                   ),
                                 ],
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.black)),
                               child: Column(
                                 children: [
-                                  Row(
+                                  const Row(
                                     children: [
                                       Text(
                                         'H.W:',
@@ -168,14 +169,14 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                       Text('Page Number 76, 88'),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Card(
                                     elevation: 5,
                                     child: Container(
                                       padding:
-                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -184,7 +185,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                           children: [
                                             IconButton(
                                                 onPressed: () {},
-                                                icon: Icon(
+                                                icon: const Icon(
                                                   Icons.play_arrow,
                                                   color: Appcolors
                                                       .primaryButtonColor,
@@ -192,7 +193,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                             Slider(
                                                 value: .8,
                                                 onChanged: (Value) {}),
-                                            Text('00:00'),
+                                            const Text('00:00'),
                                           ],
                                         ),
                                       ),
@@ -202,12 +203,12 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.black)),
                               child: Column(
                                 children: [
-                                  Row(
+                                  const Row(
                                     children: [
                                       Text(
                                         'C.W:',
@@ -220,14 +221,14 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                       Text('Page Number 76 part (4)'),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Card(
                                     elevation: 5,
                                     child: Container(
                                       padding:
-                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -236,7 +237,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                           children: [
                                             IconButton(
                                                 onPressed: () {},
-                                                icon: Icon(
+                                                icon: const Icon(
                                                   Icons.play_arrow,
                                                   color: Appcolors
                                                       .primaryButtonColor,
@@ -244,20 +245,20 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                             Slider(
                                                 value: .8,
                                                 onChanged: (Value) {}),
-                                            Text('00:00'),
+                                            const Text('00:00'),
                                           ],
                                         ),
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 20,
                                   ),
                                   Card(
                                     elevation: 5,
                                     child: Container(
                                       padding:
-                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -266,15 +267,15 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                           children: [
                                             IconButton(
                                                 onPressed: () {},
-                                                icon: Icon(
+                                                icon: const Icon(
                                                   Icons.image,
                                                   color: Appcolors
                                                       .primaryButtonColor,
                                                 )),
-                                            SizedBox(
+                                            const SizedBox(
                                               width: 20,
                                             ),
-                                            Text('Click here to view image'),
+                                            const Text('Click here to view image'),
                                           ],
                                         ),
                                       ),
@@ -287,13 +288,13 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Card(
                       elevation: 5,
                       child: Container(
-                        padding: EdgeInsets.fromLTRB(5, 10, 5, 5),
+                        padding: const EdgeInsets.fromLTRB(5, 10, 5, 5),
                         child: Column(
                           children: [
                             Container(
@@ -305,37 +306,37 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                   Container(
                                     height: 50,
                                     width: 93,
-                                    child: Center(child: Text('5 Feb')),
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
+                                    child: Center(child: Text('5 Feb')),
                                   ),
                                   Container(
                                     height: 50,
                                     width: 172,
-                                    child: Center(child: Text('Mathematics')),
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
+                                    child: Center(child: Text('Mathematics')),
                                   ),
                                   Container(
                                     height: 50,
                                     width: 93,
-                                    child: Center(child: Text('3rd A')),
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
+                                    child: Center(child: Text('3rd A')),
                                   ),
                                 ],
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.black)),
                               child: Column(
                                 children: [
-                                  Row(
+                                  const Row(
                                     children: [
                                       Text(
                                         'H.W:',
@@ -348,14 +349,14 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                       Text('Page Number 76, 88'),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Card(
                                     elevation: 5,
                                     child: Container(
                                       padding:
-                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -364,7 +365,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                           children: [
                                             IconButton(
                                                 onPressed: () {},
-                                                icon: Icon(
+                                                icon: const Icon(
                                                   Icons.play_arrow,
                                                   color: Appcolors
                                                       .primaryButtonColor,
@@ -372,7 +373,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                             Slider(
                                                 value: .8,
                                                 onChanged: (Value) {}),
-                                            Text('00:00'),
+                                            const Text('00:00'),
                                           ],
                                         ),
                                       ),
@@ -382,12 +383,12 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.black)),
                               child: Column(
                                 children: [
-                                  Row(
+                                  const Row(
                                     children: [
                                       Text(
                                         'C.W:',
@@ -400,14 +401,14 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                       Text('Page Number 76 part (4)'),
                                     ],
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 5,
                                   ),
                                   Card(
                                     elevation: 5,
                                     child: Container(
                                       padding:
-                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -416,7 +417,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                           children: [
                                             IconButton(
                                                 onPressed: () {},
-                                                icon: Icon(
+                                                icon: const Icon(
                                                   Icons.play_arrow,
                                                   color: Appcolors
                                                       .primaryButtonColor,
@@ -424,20 +425,20 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                             Slider(
                                                 value: .8,
                                                 onChanged: (Value) {}),
-                                            Text('00:00'),
+                                            const Text('00:00'),
                                           ],
                                         ),
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 20,
                                   ),
                                   Card(
                                     elevation: 5,
                                     child: Container(
                                       padding:
-                                          EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -446,15 +447,15 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                           children: [
                                             IconButton(
                                                 onPressed: () {},
-                                                icon: Icon(
+                                                icon: const Icon(
                                                   Icons.image,
                                                   color: Appcolors
                                                       .primaryButtonColor,
                                                 )),
-                                            SizedBox(
+                                            const SizedBox(
                                               width: 20,
                                             ),
-                                            Text('Click here to view image'),
+                                            const Text('Click here to view image'),
                                           ],
                                         ),
                                       ),
