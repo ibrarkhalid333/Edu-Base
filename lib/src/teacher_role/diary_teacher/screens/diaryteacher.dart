@@ -13,7 +13,7 @@ class DiaryForTeacher extends StatefulWidget {
 }
 
 class _DiaryForTeacherState extends State<DiaryForTeacher> {
-  final String? _dropdownValue = 'drop down';
+  final String _dropdownValue = 'drop down';
   final DiaryTeacherController dtc = Get.put(DiaryTeacherController());
   @override
   Widget build(BuildContext context) {
@@ -75,8 +75,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                         value: 'drop down',
                         child: Row(
                           children: [
-                            Icon(Icons.watch_later_outlined),
-                            SizedBox(
+                            const Icon(Icons.watch_later_outlined),
+                            const SizedBox(
                               width: 10,
                             ),
                             Text(dtc.firstItem.toString())
@@ -87,8 +87,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                         value: 'Item 2',
                         child: Row(
                           children: [
-                            Icon(Icons.watch_later_outlined),
-                            SizedBox(
+                            const Icon(Icons.watch_later_outlined),
+                            const SizedBox(
                               width: 10,
                             ),
                             Text(dtc.secondItem.toString()),
@@ -129,7 +129,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
-                                    child: Center(child: Text('5 Feb')),
+                                    child: const Center(child: Text('5 Feb')),
                                   ),
                                   Container(
                                     height: 50,
@@ -137,7 +137,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
-                                    child: Center(child: Text('Mathematics')),
+                                    child: const Center(child: Text('Mathematics')),
                                   ),
                                   Container(
                                     height: 50,
@@ -145,7 +145,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
-                                    child: Center(child: Text('3rd A')),
+                                    child: const Center(child: Text('3rd A')),
                                   ),
                                 ],
                               ),
@@ -309,7 +309,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
-                                    child: Center(child: Text('5 Feb')),
+                                    child: const Center(child: Text('5 Feb')),
                                   ),
                                   Container(
                                     height: 50,
@@ -317,7 +317,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
-                                    child: Center(child: Text('Mathematics')),
+                                    child: const Center(child: Text('Mathematics')),
                                   ),
                                   Container(
                                     height: 50,
@@ -325,7 +325,7 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
-                                    child: Center(child: Text('3rd A')),
+                                    child: const Center(child: Text('3rd A')),
                                   ),
                                 ],
                               ),

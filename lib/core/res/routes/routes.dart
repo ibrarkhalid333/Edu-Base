@@ -4,6 +4,7 @@ import 'package:edu_base/src/auth/screens/otp_field_screen.dart';
 import 'package:edu_base/src/auth/screens/splash_screen.dart';
 import 'package:edu_base/src/example.dart';
 import 'package:edu_base/src/home/screens/home_screen.dart';
+import 'package:edu_base/src/parrent_role/student_dashboard/screens/student_dashboard.dart';
 import 'package:edu_base/src/parrent_role/students_info/screens/student_info.dart';
 import 'package:edu_base/src/teacher_role/attendance/screens/attendance_teacher.dart';
 import 'package:edu_base/src/teacher_role/diary_teacher/screens/diaryteacher.dart';
@@ -25,6 +26,8 @@ class AppRoutes {
         GetPage(
             name: RouteNames.TAttendance, page: () => const AttendanceForTeacher()),
         GetPage(name: RouteNames.AwardList, page: () => const AwardList()),
-        GetPage(name: RouteNames.StudentInfo, page: () => const StudentInfo())
+        GetPage(name: RouteNames.StudentInfo, page: () => const StudentInfo()),
+        GetPage(name: RouteNames.StudentDashboard, page: () => const StudentDashboard()),
+
       ];
 }

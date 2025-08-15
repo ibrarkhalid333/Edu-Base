@@ -2,7 +2,6 @@ import 'package:edu_base/core/res/assets/image_asset.dart';
 import 'package:edu_base/core/res/routes/route_names.dart';
 import 'package:edu_base/src/Components/round_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 

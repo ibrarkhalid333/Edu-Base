@@ -27,7 +27,7 @@ class BaseCard extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text('$ClassName (${Campus})'),
+                  Text('$ClassName ($Campus)'),
                   const Icon(Icons.arrow_drop_down),
                 ],
               ),
