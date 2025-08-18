@@ -8,9 +8,12 @@ import 'package:get/get.dart';
 
 void main() {
   runApp(
-    ScreenUtilInit(
-      designSize: const Size(360, 640),
-      builder: (context, child) => const MyApp(),
+    DevicePreview(
+      enabled: true,
+      builder: (context)=> ScreenUtilInit(
+        designSize: const Size(360, 640),
+        builder: (context, child) => const MyApp(),
+      ),
     ),
   );
 }

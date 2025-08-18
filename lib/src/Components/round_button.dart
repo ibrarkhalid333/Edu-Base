@@ -1,15 +1,16 @@
 import 'package:edu_base/core/res/colors/appColors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class RoundButton extends StatelessWidget {
-  const RoundButton(
+  RoundButton(
       {super.key,
       this.textColor = Appcolors.primaryTextColor,
       this.buttonColor = Appcolors.primaryButtonColor,
       this.title = '',
       required this.onPress,
-      this.width = 50,
-      this.height = 50,
+      this.width = 30,
+      this.height = 30,
       this.loading = false,
       this.icon = const Icon(Icons.account_circle)});
 

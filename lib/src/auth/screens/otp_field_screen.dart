@@ -2,6 +2,7 @@ import 'package:edu_base/core/res/assets/image_asset.dart';
 import 'package:edu_base/core/res/routes/route_names.dart';
 import 'package:edu_base/src/Components/round_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class OtpFieldScreen extends StatefulWidget {
@@ -16,7 +17,7 @@ class _OtpFieldScreenState extends State<OtpFieldScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-      padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
+      padding: EdgeInsets.fromLTRB(15.w, 0, 15.w, 0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,26 +25,28 @@ class _OtpFieldScreenState extends State<OtpFieldScreen> {
           Image.asset(
             ImageAssets.logo,
             fit: BoxFit.cover,
-            width: 100,
-            height: 100,
+            width: 40.sp,
+            height: 40.sp,
           ),
-          const SizedBox(
-            height: 5,
+          SizedBox(
+            height: 4.h,
           ),
-          const Text(
+          Text(
             "EDUBASE",
             style: TextStyle(
-              fontSize: 15,
+              fontSize: 7.sp,
               fontWeight: FontWeight.w700,
             ),
           ),
-          const Text(
+          Text(
             "PARENTS",
             style: TextStyle(
-                fontSize: 25, fontWeight: FontWeight.w900, color: Colors.blue),
+                fontSize: 8.sp,
+                fontWeight: FontWeight.w900,
+                color: Colors.blue),
           ),
-          const SizedBox(
-            height: 50,
+          SizedBox(
+            height: 60.h,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,12 +66,13 @@ class _OtpFieldScreenState extends State<OtpFieldScreen> {
               ),
             ],
           ),
-          const SizedBox(
-            height: 10,
+          SizedBox(
+            height: 10.h,
           ),
           RoundButton(
+              height: 50.h,
               title: 'Submit',
-              width: 300,
+              width: double.infinity,
               loading: false,
               onPress: () {
                 Get.toNamed(RouteNames.HomeScreen);
