@@ -1,5 +1,6 @@
 import 'package:edu_base/core/res/colors/appColors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SellectionContainer extends StatelessWidget {
   const SellectionContainer({
@@ -22,13 +23,13 @@ class SellectionContainer extends StatelessWidget {
       child: Container(
         width: width,
         height: height,
-        padding: const EdgeInsets.all(4),
+        padding: EdgeInsets.all(2.sp),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: const BorderRadius.all(Radius.circular(10)),
+          borderRadius: BorderRadius.all(Radius.circular(7.r)),
           boxShadow: [
             BoxShadow(
-              color: Appcolors.blackColor.withOpacity(.4),
+              color: Appcolors.blackColor.withAlpha(100),
               blurRadius: 5,
             ),
           ],
@@ -40,15 +41,15 @@ class SellectionContainer extends StatelessWidget {
             Image.asset(
               imagePath,
               fit: BoxFit.cover,
-              width: 100,
-              height: 100,
+              width: 25.sp,
+              height: 25.sp,
             ),
-            const SizedBox(
-              height: 5,
+            SizedBox(
+              height: 2.h,
             ),
             Text(
               title,
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+              style: TextStyle(fontSize: 7.sp, fontWeight: FontWeight.w700),
             ),
           ],
         ),
