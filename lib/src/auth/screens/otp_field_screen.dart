@@ -17,7 +17,7 @@ class _OtpFieldScreenState extends State<OtpFieldScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-      padding: EdgeInsets.fromLTRB(15.w, 0, 15.w, 0),
+      padding: EdgeInsets.fromLTRB(20.w, 0, 20.w, 0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,23 +25,23 @@ class _OtpFieldScreenState extends State<OtpFieldScreen> {
           Image.asset(
             ImageAssets.logo,
             fit: BoxFit.cover,
-            width: 40.sp,
-            height: 40.sp,
+            width: 80.sp,
+            height: 80.sp,
           ),
           SizedBox(
-            height: 4.h,
+            height: 6.h,
           ),
           Text(
             "EDUBASE",
             style: TextStyle(
-              fontSize: 7.sp,
+              fontSize: 15.sp,
               fontWeight: FontWeight.w700,
             ),
           ),
           Text(
             "PARENTS",
             style: TextStyle(
-                fontSize: 8.sp,
+                fontSize: 20.sp,
                 fontWeight: FontWeight.w900,
                 color: Colors.blue),
           ),
@@ -67,10 +67,10 @@ class _OtpFieldScreenState extends State<OtpFieldScreen> {
             ],
           ),
           SizedBox(
-            height: 10.h,
+            height: 8.h,
           ),
           RoundButton(
-              height: 50.h,
+              height: 40.h,
               title: 'Submit',
               width: double.infinity,
               loading: false,

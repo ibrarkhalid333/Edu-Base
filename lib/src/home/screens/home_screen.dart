@@ -25,30 +25,30 @@ class _HomeScreenState extends State<HomeScreen> {
       children: [
         Text(
           'Select Role',
-          style: TextStyle(fontSize: 9.sp, fontWeight: FontWeight.w700),
+          style: TextStyle(fontSize: 25.sp, fontWeight: FontWeight.w700),
         ),
         SizedBox(
-          height: 20.h,
+          height: 25.h,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SellectionContainer(
               title: teacher,
-              width: 40.sp,
-              height: 40.sp,
+              width: 120.sp,
+              height: 120.sp,
               imagePath: ImageAssets.teacher,
               onPress: () {
                 Get.toNamed(RouteNames.TeacherDashboard);
               },
             ),
             SizedBox(
-              width: 5.w,
+              width: 10.w,
             ),
             SellectionContainer(
               title: Parent,
-              width: 40.sp,
-              height: 40.sp,
+              width: 120.sp,
+              height: 120.sp,
               imagePath: ImageAssets.parents,
               onPress: () {
                 Get.toNamed(RouteNames.StudentInfo);

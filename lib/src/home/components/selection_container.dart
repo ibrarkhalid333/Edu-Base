@@ -23,10 +23,10 @@ class SellectionContainer extends StatelessWidget {
       child: Container(
         width: width,
         height: height,
-        padding: EdgeInsets.all(2.sp),
+        padding: EdgeInsets.all(5.sp),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(7.r)),
+          borderRadius: BorderRadius.all(Radius.circular(10.r)),
           boxShadow: [
             BoxShadow(
               color: Appcolors.blackColor.withAlpha(100),
@@ -41,15 +41,15 @@ class SellectionContainer extends StatelessWidget {
             Image.asset(
               imagePath,
               fit: BoxFit.cover,
-              width: 25.sp,
-              height: 25.sp,
+              width: 70.sp,
+              height: 70.sp,
             ),
             SizedBox(
               height: 2.h,
             ),
             Text(
               title,
-              style: TextStyle(fontSize: 7.sp, fontWeight: FontWeight.w700),
+              style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.w700),
             ),
           ],
         ),

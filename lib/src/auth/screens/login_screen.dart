@@ -18,36 +18,36 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-      padding: EdgeInsets.fromLTRB(15.w, 0, 15.w, 0),
+      padding: EdgeInsets.fromLTRB(20.w, 0, 20.w, 0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset(
             ImageAssets.logo,
-            width: 40.sp,
-            height: 40.sp,
+            width: 80.sp,
+            height: 80.sp,
             fit: BoxFit.contain,
           ),
           SizedBox(
-            height: 4.h,
+            height: 6.h,
           ),
           Text(
             "EDUBASE",
             style: TextStyle(
-              fontSize: 7.sp,
+              fontSize: 15.sp,
               fontWeight: FontWeight.w700,
             ),
           ),
           Text(
             "PARENTS",
             style: TextStyle(
-                fontSize: 8.sp,
+                fontSize: 20.sp,
                 fontWeight: FontWeight.w900,
                 color: Colors.blue),
           ),
           SizedBox(
-            height: 60.h,
+            height: 50.h,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,10 +72,10 @@ class _LoginScreenState extends State<LoginScreen> {
             ],
           ),
           SizedBox(
-            height: 10.h,
+            height: 8.h,
           ),
           RoundButton(
-              height: 50.h,
+              height: 40.h,
               title: 'Get OTP',
               //width: 300.w,
               width: double.infinity,
