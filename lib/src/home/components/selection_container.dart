@@ -8,8 +8,8 @@ class SellectionContainer extends StatelessWidget {
     required this.onPress,
     required this.title,
     required this.imagePath,
-    this.width = 150,
-    this.height = 250,
+    this.width = 20,
+    this.height = 20,
   });
 
   final double height, width;

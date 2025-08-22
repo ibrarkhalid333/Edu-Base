@@ -3,6 +3,7 @@ import 'package:edu_base/core/res/colors/appColors.dart';
 import 'package:edu_base/core/res/routes/route_names.dart';
 import 'package:edu_base/src/home/components/selection_container.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class TeacherDashboard extends StatefulWidget {
@@ -45,21 +46,21 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
         child: Stack(
           children: [
             Container(
-              height: 300,
-              padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),
-              decoration: const BoxDecoration(
+              height: 220.h,
+              padding: EdgeInsets.fromLTRB(15.sp, 25.sp, 15.sp, 0),
+              decoration: BoxDecoration(
                 color: Colors.blue,
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(150),
-                  bottomRight: Radius.circular(150),
+                  bottomLeft: Radius.circular(100.r),
+                  bottomRight: Radius.circular(100.r),
                 ),
               ),
               child: Column(
                 children: [
                   ListTile(
-                    leading: const CircleAvatar(
+                    leading: CircleAvatar(
                       backgroundColor: Colors.black,
-                      radius: 20,
+                      radius: 20.r,
                     ),
                     title: const Text(
                       'The Skills Education \nSystem',
@@ -79,20 +80,21 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 50,
+                  SizedBox(
+                    height: 40.h,
                   ),
-                  const Text(
+                  Text(
                     'Hi, Mudasir Ilahi',
-                    style: TextStyle(color: Colors.white, fontSize: 30),
+                    style: TextStyle(color: Colors.white, fontSize: 30.sp),
                   ),
                 ],
               ),
             ),
             Container(
-              margin: const EdgeInsets.fromLTRB(15, 0, 15, 0),
-              padding: const EdgeInsets.fromLTRB(25, 230, 25, 30),
+              margin: EdgeInsets.fromLTRB(10.sp, 0, 10.sp, 0),
+              padding: EdgeInsets.fromLTRB(20.sp, 200.sp, 20.sp, 25.sp),
               child: GridView.builder(
+                  physics: NeverScrollableScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       mainAxisSpacing: 10,
@@ -100,6 +102,8 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
                   itemCount: Items.length,
                   itemBuilder: (context, index) {
                     return SellectionContainer(
+                        height: 5.sp,
+                        width: 1.sp,
                         title: Items[index],
                         imagePath: ImageAsset[index],
                         onPress: () {
