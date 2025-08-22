@@ -1,6 +1,7 @@
 import 'package:edu_base/core/res/colors/appColors.dart';
 import 'package:edu_base/src/Components/round_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import '../controller/diary_teacher_controller.dart';
@@ -23,18 +24,18 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
         backgroundColor: Appcolors.blueColor,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: EdgeInsets.all(8.sp),
         child: Column(
           children: [
             Container(
-              height: 50,
-              padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+              height: 40.h,
+              padding: EdgeInsets.fromLTRB(7.sp, 0, 0, 0),
               // width: 350,
               decoration: BoxDecoration(
                 border: Border.all(
                   width: 1.0,
                 ),
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(10.r),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -48,8 +49,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                   ),
                   InkWell(
                     child: Container(
-                      height: 50,
-                      width: 70,
+                      height: 40.sp,
+                      width: 60.sp,
                       decoration: const BoxDecoration(
                           color: Appcolors.blackColor,
                           borderRadius: BorderRadius.only(
@@ -137,7 +138,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
-                                    child: const Center(child: Text('Mathematics')),
+                                    child: const Center(
+                                        child: Text('Mathematics')),
                                   ),
                                   Container(
                                     height: 50,
@@ -151,7 +153,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                               ),
                             ),
                             Container(
-                              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              padding:
+                                  const EdgeInsets.fromLTRB(15, 20, 15, 20),
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.black)),
                               child: Column(
@@ -175,8 +178,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                   Card(
                                     elevation: 5,
                                     child: Container(
-                                      padding:
-                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -203,7 +206,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                               ),
                             ),
                             Container(
-                              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              padding:
+                                  const EdgeInsets.fromLTRB(15, 20, 15, 20),
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.black)),
                               child: Column(
@@ -227,8 +231,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                   Card(
                                     elevation: 5,
                                     child: Container(
-                                      padding:
-                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -257,8 +261,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                   Card(
                                     elevation: 5,
                                     child: Container(
-                                      padding:
-                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -275,7 +279,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                             const SizedBox(
                                               width: 20,
                                             ),
-                                            const Text('Click here to view image'),
+                                            const Text(
+                                                'Click here to view image'),
                                           ],
                                         ),
                                       ),
@@ -317,7 +322,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                     decoration: BoxDecoration(
                                         border:
                                             Border.all(color: Colors.black)),
-                                    child: const Center(child: Text('Mathematics')),
+                                    child: const Center(
+                                        child: Text('Mathematics')),
                                   ),
                                   Container(
                                     height: 50,
@@ -331,7 +337,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                               ),
                             ),
                             Container(
-                              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              padding:
+                                  const EdgeInsets.fromLTRB(15, 20, 15, 20),
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.black)),
                               child: Column(
@@ -355,8 +362,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                   Card(
                                     elevation: 5,
                                     child: Container(
-                                      padding:
-                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -383,7 +390,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                               ),
                             ),
                             Container(
-                              padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              padding:
+                                  const EdgeInsets.fromLTRB(15, 20, 15, 20),
                               decoration: BoxDecoration(
                                   border: Border.all(color: Colors.black)),
                               child: Column(
@@ -407,8 +415,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                   Card(
                                     elevation: 5,
                                     child: Container(
-                                      padding:
-                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -437,8 +445,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                   Card(
                                     elevation: 5,
                                     child: Container(
-                                      padding:
-                                          const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                                      padding: const EdgeInsets.fromLTRB(
+                                          20, 0, 20, 0),
                                       height: 60,
                                       child: Center(
                                         child: Row(
@@ -455,7 +463,8 @@ class _DiaryForTeacherState extends State<DiaryForTeacher> {
                                             const SizedBox(
                                               width: 20,
                                             ),
-                                            const Text('Click here to view image'),
+                                            const Text(
+                                                'Click here to view image'),
                                           ],
                                         ),
                                       ),

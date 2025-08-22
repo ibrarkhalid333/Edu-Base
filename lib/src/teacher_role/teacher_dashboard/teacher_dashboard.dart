@@ -117,7 +117,7 @@ class _TeacherDashboardState extends State<TeacherDashboard> {
       bottomNavigationBar: Container(
         decoration: BoxDecoration(boxShadow: [
           BoxShadow(
-            color: Appcolors.blackColor.withOpacity(.1),
+            color: Appcolors.blackColor.withAlpha(100),
             blurRadius: 2,
           )
         ]),

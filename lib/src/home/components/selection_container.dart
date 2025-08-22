@@ -8,8 +8,8 @@ class SellectionContainer extends StatelessWidget {
     required this.onPress,
     required this.title,
     required this.imagePath,
-    this.width = 20,
-    this.height = 20,
+    this.width = 50,
+    this.height = 50,
   });
 
   final double height, width;
@@ -23,7 +23,7 @@ class SellectionContainer extends StatelessWidget {
       child: Container(
         width: width,
         height: height,
-        padding: EdgeInsets.all(5.sp),
+        padding: EdgeInsets.all(10.sp),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(10.r)),
@@ -45,7 +45,7 @@ class SellectionContainer extends StatelessWidget {
               height: 70.sp,
             ),
             SizedBox(
-              height: 2.h,
+              height: 1.h,
             ),
             Text(
               title,
